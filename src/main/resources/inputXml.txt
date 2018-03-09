@@ -1,0 +1,28 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <jdf:JdfResponseFornkBlocchiCC xmlns:jdf="http://www.bnpp.com/jdf">
+         <jdf:header>
+            <jdf:trace-id>1</jdf:trace-id>
+            <jdf:timestamp>1520324132950</jdf:timestamp>
+            <jdf:command>jrf-nk.BlocchiCCFacade</jdf:command>
+            <jdf:version/>
+            <jdf:operation-id/>
+            <jdf:calling-user>a</jdf:calling-user>
+            <jdf:calling-application>test_app</jdf:calling-application>
+            <jdf:calling-channel/>
+            <jdf:locale-code>it</jdf:locale-code>
+            <jdf:country-code>IT</jdf:country-code>
+         </jdf:header>
+         <output-data xmlns="http://www.bnpp.com/jdf/service/nk/blocchicc/output">
+            <app:BlocchiCCOType xmlns:app="http://www.bnpp.com/jdf/service/nk/blocchicc/output">
+               <app:esistenzaConto>S</app:esistenzaConto>
+               <app:statoConto>20</app:statoConto>
+               <app:divisaConto>EUR</app:divisaConto>
+               <app:richiestaChiusura>N</app:richiestaChiusura>
+               <app:presenzaBlocchi>N</app:presenzaBlocchi>
+            </app:BlocchiCCOType>
+         </output-data>
+      </jdf:JdfResponseFornkBlocchiCC>
+   </soapenv:Body>
+</soapenv:Envelope>
